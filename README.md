@@ -1,6 +1,10 @@
 # Steven Cotterill - Web Development Blog
 
-> This is my [Web Development blog](https://stevencotterill.com), built in Vue.js with the Nuxt framework. Details of the website can be seen [here](https://stevencotterill.com/articles/version-2-of-the-website-is-live).
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Uptime Robot monitoring](https://img.shields.io/uptimerobot/ratio/m781955881-595b820a57adad1df7364567.svg)](https://uptimerobot.com)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ef6916f7-122a-469c-b25c-3a9c42e590b3/deploy-status)](https://www.netlify.com)
+
+This is my [Web Development blog](https://stevencotterill.com), built in Vue.js with the Nuxt framework. Details of the website can be seen [here](https://stevencotterill.com/articles/version-2-of-the-website-is-live).
 
 ## Build Setup
 

@@ -1,0 +1,42 @@
+@charset 'utf-8';
+
+/* Custom variables */
+
+$blue: #0366D6;
+
+$navbar-height: 4rem;
+$navbar-item-img-max-height: 6rem;
+
+$tag-background-color: #B9D6F2;
+$tag-color: #000;
+
+$input-icon-color: #0353A4;
+$input-icon-active-color: $blue;
+
+$footer-background-color: $blue;
+
+/* Base styles */
+
+@import 'bulma/sass/utilities/_all.sass';
+@import 'bulma/sass/grid/columns.sass';
+@import 'bulma/sass/base/_all.sass';
+
+/* Components */
+
+@import 'bulma/sass/components/card.sass';
+@import 'bulma/sass/components/navbar.sass';
+
+/* Elements */
+
+@import 'bulma/sass/elements/button.sass';
+@import 'bulma/sass/elements/container.sass';
+@import 'bulma/sass/elements/content.sass';
+@import 'bulma/sass/elements/form.sass';
+@import 'bulma/sass/elements/icon.sass';
+@import 'bulma/sass/elements/image.sass';
+@import 'bulma/sass/elements/tag.sass';
+@import 'bulma/sass/elements/title.sass';
+
+/* Layout */
+
+@import 'bulma/sass/layout/_all.sass';

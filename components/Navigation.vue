@@ -30,9 +30,16 @@
             ARTICLES
           </nuxt-link>
 
-          <a v-if="$nuxt.$route.path == '/'" v-scroll-to="'#contact'" href="#" class="navbar-item">
-            CONTACT
-          </a>
+          <nuxt-link to="/snippets" class="navbar-item">
+            SNIPPETS
+          </nuxt-link>
+
+          <a
+            v-if="$nuxt.$route.path == '/'"
+            v-scroll-to="'#contact'"
+            href="#"
+            class="navbar-item"
+          >CONTACT</a>
 
           <nuxt-link v-else to="/#contact" class="navbar-item">
             CONTACT
@@ -41,11 +48,7 @@
 
         <div class="navbar-item is-hidden-touch">
           <div class="field is-grouped">
-            <a
-              href="https://twitter.com/stevie_c91"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://twitter.com/stevie_c91" target="_blank" rel="noopener noreferrer">
               <span class="icon is-medium has-text-white">
                 <font-awesome-icon :icon="['fab', 'twitter']" size="lg" />
               </span>
@@ -54,11 +57,7 @@
         </div>
         <div class="navbar-item is-hidden-touch">
           <div class="field is-grouped">
-            <a
-              href="https://github.com/stevie-c91"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://github.com/stevie-c91" target="_blank" rel="noopener noreferrer">
               <span class="icon is-medium has-text-white">
                 <font-awesome-icon :icon="['fab', 'github']" size="lg" />
               </span>

@@ -34,6 +34,11 @@ export default {
     Navigation,
     Card
   },
+  computed: {
+    chunkedArticles() {
+      return chunk(this.articles, 3)
+    }
+  },
   asyncData(context) {
     return context.app.$axios
       .get('articles', {
@@ -46,11 +51,6 @@ export default {
           articles: response.data
         }
       })
-  },
-  computed: {
-    chunkedArticles() {
-      return chunk(this.articles, 3)
-    }
   },
   head() {
     return {

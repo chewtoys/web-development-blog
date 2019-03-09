@@ -9,10 +9,10 @@
         <a
           id="hamburger"
           :class="{ 'is-active': showNav }"
+          @click="showNav = !showNav"
           role="button"
           class="navbar-burger"
           aria-label="Hamburger navigation"
-          @click="showNav = !showNav"
         >
           <span aria-hidden="true" />
           <span aria-hidden="true" />
@@ -30,9 +30,16 @@
             ARTICLES
           </nuxt-link>
 
-          <a v-if="$nuxt.$route.path == '/'" v-scroll-to="'#contact'" href="#" class="navbar-item">
-            CONTACT
-          </a>
+          <nuxt-link to="/snippets" class="navbar-item">
+            SNIPPETS
+          </nuxt-link>
+
+          <a
+            v-if="$nuxt.$route.path == '/'"
+            v-scroll-to="'#contact'"
+            href="#"
+            class="navbar-item"
+          >CONTACT</a>
 
           <nuxt-link v-else to="/#contact" class="navbar-item">
             CONTACT

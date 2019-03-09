@@ -3,7 +3,7 @@
     <div class="card article-cards">
       <div class="card-image">
         <figure class="image is-4by3">
-          <nuxt-link :to="'/articles/' + cardData.slug">
+          <nuxt-link :to="`/articles/${cardData.slug}`">
             <img :src="cardData.mainImage['440x330']" :alt="cardData.title">
           </nuxt-link>
         </figure>

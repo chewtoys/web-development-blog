@@ -14,15 +14,15 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.13",
-    "@fortawesome/free-brands-svg-icons": "^5.7.0",
-    "@fortawesome/free-solid-svg-icons": "^5.7.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-brands-svg-icons": "^5.7.2",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@fortawesome/vue-fontawesome": "^0.1.5",
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/google-analytics": "^2.0.2",
-    "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/google-analytics": "^2.2.0",
+    "@nuxtjs/pwa": "^3.0.0-beta.12",
     "@nuxtjs/sitemap": "^0.2.0",
-    "bulma": "^0.7.2",
+    "bulma": "^0.7.4",
     "cross-env": "^5.2.0",
     "lodash.chunk": "^4.2.0",
     "node-sass": "^4.11.0",
@@ -30,7 +30,7 @@
     "prismjs": "^1.15.0",
     "sass-loader": "^7.1.0",
     "vue-disqus": "^3.0.5",
-    "vue-scrollto": "^2.13.0"
+    "vue-scrollto": "^2.14.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
@@ -41,6 +41,7 @@
     "eslint-plugin-import": ">=2.14.0",
     "eslint-plugin-jest": ">=21.24.1",
     "eslint-plugin-node": ">=7.0.1",
+    "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "2.6.2",
     "eslint-plugin-promise": ">=4.0.1",
     "eslint-plugin-standard": ">=4.0.0",

@@ -1,10 +1,11 @@
 {
 	"recommendations": [
-		"michelemelluso.code-beautifier",
 		"dbaeumer.vscode-eslint",
-		"wix.vscode-import-cost",
 		"esbenp.prettier-vscode",
+		"michelemelluso.code-beautifier",
 		"robinbentley.sass-indented",
-		"octref.vetur"
+		"wix.vscode-import-cost",
+    "editorconfig.editorconfig",
+    "octref.vetur"
 	]
 }

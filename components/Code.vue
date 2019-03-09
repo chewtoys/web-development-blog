@@ -6,9 +6,9 @@
 
 <script>
 import Prism from 'prismjs'
-import 'prismjs/components/prism-markup-templating.min.js'
-import 'prismjs/components/prism-php.min.js'
-import 'prismjs/components/prism-json.min.js'
+import 'prismjs/components/prism-markup-templating'
+import 'prismjs/components/prism-php'
+import 'prismjs/components/prism-json'
 import 'prismjs/themes/prism-okaidia.css'
 import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace'
 

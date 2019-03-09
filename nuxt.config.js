@@ -8,17 +8,17 @@ import axios from 'axios'
  */
 const routes = function(callback) {
   axios
-    .get('https://api.stevencotterill.com/wp-json/wdb/v1/articles')
+    .get('https://api.stevencotterill.com/wp-json/wdb/v1/routes')
     .then(res => {
-      const routes = res.data.map(article => {
-        return '/articles/' + article.slug
+      const routes = res.data.map(route => {
+        return route
       })
       callback(null, routes)
     })
     .catch(callback)
 }
 
-module.exports = {
+export default {
   /*
    ** Server-side rendering
    */

@@ -14,7 +14,7 @@
       </div>
 
       <no-ssr>
-        <CodeSnippet v-if="content.type === 'code'" :data="content" />
+        <Code v-if="content.type === 'code'" :data="content" />
       </no-ssr>
 
       <YouTube v-if="content.type === 'youtube'" :youtube-id="content.id" />
@@ -23,12 +23,12 @@
 </template>
 
 <script>
-import CodeSnippet from '~/components/CodeSnippet'
+import Code from '~/components/Code'
 import YouTube from '~/components/YouTube'
 
 export default {
   components: {
-    CodeSnippet,
+    Code,
     YouTube
   },
   props: {

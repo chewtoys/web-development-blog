@@ -17,7 +17,7 @@
           :key="i"
           class="article-columns"
         >
-          <Card
+          <CardArticle
             v-for="article in chunk"
             :key="article.id"
             :card-data="article"
@@ -41,14 +41,14 @@
 
 <script>
 import NavigationHero from '~/components/NavigationHero'
-import Card from '~/components/Card'
+import CardArticle from '~/components/CardArticle'
 import ContactForm from '~/components/ContactForm'
 import chunk from 'lodash.chunk'
 
 export default {
   components: {
     NavigationHero,
-    Card,
+    CardArticle,
     ContactForm
   },
   computed: {

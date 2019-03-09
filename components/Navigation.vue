@@ -9,10 +9,10 @@
         <a
           id="hamburger"
           :class="{ 'is-active': showNav }"
+          @click="showNav = !showNav"
           role="button"
           class="navbar-burger"
           aria-label="Hamburger navigation"
-          @click="showNav = !showNav"
         >
           <span aria-hidden="true" />
           <span aria-hidden="true" />
@@ -48,7 +48,11 @@
 
         <div class="navbar-item is-hidden-touch">
           <div class="field is-grouped">
-            <a href="https://twitter.com/stevie_c91" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com/stevie_c91"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span class="icon is-medium has-text-white">
                 <font-awesome-icon :icon="['fab', 'twitter']" size="lg" />
               </span>
@@ -57,7 +61,11 @@
         </div>
         <div class="navbar-item is-hidden-touch">
           <div class="field is-grouped">
-            <a href="https://github.com/stevie-c91" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/stevie-c91"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span class="icon is-medium has-text-white">
                 <font-awesome-icon :icon="['fab', 'github']" size="lg" />
               </span>

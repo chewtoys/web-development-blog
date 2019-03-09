@@ -4,19 +4,19 @@
 
     <Section class="articles-all">
       <h2 class="title has-text-centered">
-        All articles
+        All snippets
       </h2>
 
       <Container>
         <Columns
-          v-for="(chunk, i) in chunkedArticles"
+          v-for="(chunk, i) in chunkedSnippets"
           :key="i"
           class="article-columns"
         >
-          <CardArticle
-            v-for="article in chunk"
-            :key="article.id"
-            :card-data="article"
+          <CardSnippet
+            v-for="snippet in chunk"
+            :key="snippet.id"
+            :card-data="snippet"
           />
         </Columns>
       </Container>
@@ -26,58 +26,58 @@
 
 <script>
 import Navigation from '~/components/Navigation'
-import CardArticle from '~/components/CardArticle'
+import CardSnippet from '~/components/CardSnippet'
 import chunk from 'lodash.chunk'
 
 export default {
   components: {
     Navigation,
-    CardArticle
+    CardSnippet
   },
   computed: {
-    chunkedArticles() {
-      return chunk(this.articles, 3)
+    chunkedSnippets() {
+      return chunk(this.snippets, 3)
     }
   },
   asyncData(context) {
     return context.app.$axios
-      .get('articles', {
+      .get('snippets', {
         params: {
           limit: '12'
         }
       })
       .then(response => {
         return {
-          articles: response.data
+          snippets: response.data
         }
       })
   },
   head() {
     return {
-      title: 'Articles | Steven Cotterill',
+      title: 'Snippets | Steven Cotterill',
       link: [
-        { rel: 'canonical', href: 'https://stevencotterill.com/articles' }
+        { rel: 'canonical', href: 'https://stevencotterill.com/snippets' }
       ],
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'View all of my articles'
+          content: 'View all of my snippets'
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: 'View all of my articles'
+          content: 'View all of my snippets'
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: 'Articles | Steven Cotterill'
+          content: 'Snippets | Steven Cotterill'
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: 'https://stevencotterill.com/articles'
+          content: 'https://stevencotterill.com/snippets'
         }
       ]
     }

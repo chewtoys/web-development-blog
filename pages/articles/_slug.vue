@@ -7,19 +7,16 @@
             <div class="image is-5by3 article-main-img">
               <img :src="article.mainImage['920x500']" :alt="article.title">
             </div>
-
             <Content>
               <PageIntroduction
                 :page-title="article.title"
                 :page-subtitle="article.excerpt"
                 :page-date="article.date"
               />
-
               <PostContent :data="article" />
+              <GetInTouch />
             </Content>
-
             <Comments :title="article.title" />
-
             <Newsletter />
           </Column>
         </Columns>
@@ -30,6 +27,7 @@
 
 <script>
 import PostContent from '~/components/PostContent'
+import GetInTouch from '~/components/GetInTouch'
 import Comments from '~/components/Comments'
 import Newsletter from '~/components/Newsletter'
 
@@ -37,6 +35,7 @@ export default {
   layout: 'page',
   components: {
     PostContent,
+    GetInTouch,
     Comments,
     Newsletter
   },

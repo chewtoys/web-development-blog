@@ -10,12 +10,10 @@
                 :page-subtitle="snippet.excerpt"
                 :page-date="snippet.date"
               />
-
               <PostContent :data="snippet" />
             </Content>
-
+            <GetInTouch />
             <Comments :title="snippet.title" />
-
             <Newsletter />
           </Column>
         </Columns>
@@ -26,6 +24,7 @@
 
 <script>
 import PostContent from '~/components/PostContent'
+import GetInTouch from '~/components/GetInTouch'
 import Comments from '~/components/Comments'
 import Newsletter from '~/components/Newsletter'
 
@@ -33,6 +32,7 @@ export default {
   layout: 'page',
   components: {
     PostContent,
+    GetInTouch,
     Comments,
     Newsletter
   },

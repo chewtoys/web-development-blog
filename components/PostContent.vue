@@ -8,7 +8,7 @@
         class="article-img has-text-centered"
       >
         <img
-          :src="require('~/assets/img/' + content.image)"
+          :src="content.image"
           :alt="content.alt"
         >
       </div>

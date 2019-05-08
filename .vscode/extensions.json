@@ -3,7 +3,6 @@
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
 		"michelemelluso.code-beautifier",
-		"robinbentley.sass-indented",
 		"wix.vscode-import-cost",
     "editorconfig.editorconfig",
     "octref.vetur"
